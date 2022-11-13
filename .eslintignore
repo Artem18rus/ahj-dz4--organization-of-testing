@@ -3,4 +3,3 @@ coverage
 doc
 webpack.*.js
 src
-e2e
