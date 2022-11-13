@@ -32,17 +32,18 @@ module.exports = {
         ],
       },
       {
-        test: /\.svg$/,
+        test: /\.(svg|png|gif)$/,
         type: 'asset/resource',
       },
       {
-        test: /\.png$/,
+        test: /\.txt$/,
         type: 'asset/resource',
-      },
-      {
-        test: /\.gif$/,
-        type: 'asset/resource',
-      },
+        use: [
+          {
+            loader: 'raw-loader',
+          },
+        ],
+      }
     ],
   },
   plugins: [

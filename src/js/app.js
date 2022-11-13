@@ -1,6 +1,6 @@
 // TODO: write code here
 // const cardArr = document.querySelectorAll('.card')
-export const formControl = document.querySelector('.form-control');
+const formControl = document.querySelector('.form-control');
 // console.log(formControl)
 const visa = document.querySelector('.visa');
 const master = document.querySelector('.master');
@@ -10,7 +10,7 @@ const jcb = document.querySelector('.jcb');
 const dinersClub = document.querySelector('.diners_club');
 const mir = document.querySelector('.mir');
 
-export default class CreditCard {
+class CreditCard {
   constructor(formControl) {
     this.formControl = formControl;
   }
