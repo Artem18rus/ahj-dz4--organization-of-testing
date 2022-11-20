@@ -1,15 +1,15 @@
-import InnFormWidget from "../widget"
+import InnFormWidget from '../widget';
 
 test('test1', () => {
-    document.body.innerHTML = '<div class="container"></div>';
+  document.body.innerHTML = '<div class="container"></div>';
 
-    const container = document.querySelector('.container');
-    const widget = new InnFormWidget(container);
+  const container = document.querySelector('.container');
+  const widget = new InnFormWidget(container);
 
-    widget.bindToDOM();
+  widget.bindToDOM();
 
-    expect(container.innerHTML).toEqual(InnFormWidget.markup);
-})
+  expect(container.innerHTML).toEqual(InnFormWidget.markup);
+});
 
 test('test2', () => {
   document.body.innerHTML = '<div class="container"></div>';
@@ -23,4 +23,4 @@ test('test2', () => {
   widget.submit.click();
 
   expect(widget.input.classList.contains('valid')).toEqual(true);
-})
+});
